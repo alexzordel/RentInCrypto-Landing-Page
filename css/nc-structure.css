@@ -1,0 +1,74 @@
+/*
+***************************************************************
+* PROJECT : NC-Grip Multiuse Coming-Soon Page
+* AUTHOR : Alex Zordel
+***************************************************************
+*/
+
+#main-wrapper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+#main-wrapper > .bg-section { 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1; 
+}
+#main-wrapper .transition-wrapper,
+#main-wrapper .transition-wrapper.page-transition,
+#main-wrapper .transition-wrapper.dark-bg {
+	-webkit-transition: all 0.40s ease-out;
+	-moz-transition: all 0.40s ease-out;
+	-ms-transition: all 0.40s ease-out;
+	-o-transition: all 0.40s ease-out;
+	transition: all 0.40s ease-out;
+}
+body.nc-layout-1 #main-wrapper .transition-wrapper,
+body.nc-layout-2 #main-wrapper .transition-wrapper {
+	position: absolute;
+	z-index: -1;
+}
+body.nc-layout-1 #main-wrapper .transition-wrapper {
+	top: 30px;
+	bottom: 30px;
+	left: 30px;
+	right: 30px;
+}
+body.nc-layout-2 #main-wrapper .transition-wrapper {
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+body.nc-layout-1 #main-wrapper .transition-wrapper.page-transition,
+body.nc-layout-2 #main-wrapper .transition-wrapper.page-transition { 
+	top: 50%; 
+	bottom: 50%; 
+}
+body.nc-layout-1 #page-wrapper {
+	position: absolute;
+	top: 30px;
+	bottom: 30px;
+	left: 30px;
+	right: 30px;
+}
+body.nc-layout-2 #page-wrapper {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+#main-wrapper .transition-wrapper.dark-bg { background-color: rgba(0,0,0,0.85) !important; }
+#ajax-page .close-button {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 40px;
+	height: 40px;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 9;
+}

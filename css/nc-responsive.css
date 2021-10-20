@@ -1,0 +1,366 @@
+/**
+*********************************************************
+* PROJECT : NC-Grip Multiuse Coming-Soon Page
+* AUTHOR : NCodeArt
+*********************************************************
+*/
+
+
+/**
+*****************************************************************
+* This file is licensed to NCodeArt. 
+* it's not allowed to copy or reuse it Copyright NCodeArt 2015-2016
+*****************************************************************
+*/
+
+/**
+******************************************************************
+*	DESKTOP LAYOUT 
+******************************************************************
+*/
+@media (min-width: 1500px) {
+	
+
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+
+	/*----------  GLOBAL  ----------*/
+	.container { width: 1070px; }
+
+	/*----------  HOME-WRAPPER  ----------*/
+	.home-wrapper-1 .text-animation .main-text,
+	.home-wrapper-2 .text-animation .main-text,
+	.home-wrapper-3 .text-animation .main-text,
+	.home-wrapper-4 .text-animation .main-text,
+	.home-wrapper-5 .text-animation .main-text { font-size: 60px; }
+	.home-wrapper-4 .container,
+	.home-wrapper-5 .container { width: 100%; }
+
+}	
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	/*----------  STRUCTURE  ----------*/
+	body.nc-layout-1 #page-wrapper,
+	body.nc-layout-1 #main-wrapper .transition-wrapper {
+	    top: 20px;
+	    bottom: 20px;
+	    left: 20px;
+	    right: 20px;
+	}
+
+	/*----------  GLOBAL  ----------*/
+	.container { width: 900px; }
+
+	/*----------  HOME-WRAPPER  ----------*/
+	.home-wrapper-1 .text-animation .main-text,
+	.home-wrapper-2 .text-animation .main-text,
+	.home-wrapper-3 .text-animation .main-text,
+	.home-wrapper-4 .text-animation .main-text,
+	.home-wrapper-5 .text-animation .main-text { font-size: 54px; }
+	.home-wrapper-4 .container,
+	.home-wrapper-5 .container { width: 100%; }
+
+	/*----------  ABOUT-WRAPPER-1  ----------*/
+	.about-wrapper-1 .left-part { font-size: 20px; }
+
+}
+@media (min-width: 992px) {
+
+	
+}
+
+/**
+******************************************************************
+*	MOBILE & TABLET COMMON
+******************************************************************
+*/
+@media (min-width: 200px) and (max-width: 991px) {
+
+	/*----------  STRUCTURE  ----------*/
+	body.nc-layout-1 #page-wrapper,
+	body.nc-layout-1 #main-wrapper .transition-wrapper,
+	body.nc-layout-2 #page-wrapper,
+	body.nc-layout-2 #main-wrapper .transition-wrapper {
+	    top: 0px;
+	    bottom: 0px;
+	    left: 0px;
+	    right: 0px;
+	}
+	body.nc-layout-1 #page-wrapper,
+	body.nc-layout-2 #page-wrapper { 
+		display: block; 
+		overflow-y: scroll; 
+		bottom: inherit;
+		right: inherit;
+		width: 100%;
+		height: 100%;
+	}
+	#page-wrapper .home-wrapper { 
+		/*height: 100vh;
+*/	    -webkit-justify-content: center;
+	    justify-content: center;
+	    -webkit-align-items: center;
+	    align-items: center;
+	    -ms-flex-pack: center;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	}
+	#page-wrapper #ajax-page { padding: 80px 0; }
+
+	/*----------  TITLE  ----------*/
+	.title .sub { width: 100%; }
+
+	/*----------  NAVIGATION  ----------*/
+	.nav-handel-wrpper { display: block; }
+	.navigation-wrapper,
+	.navigation-wrapper .inner-wrapper { width: 100%; height: 100%; }
+	.navigation-wrapper { 
+		display: none; 
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.9);
+		top: 0;
+		left: 0;
+	}
+	.navigation-wrapper .inner-wrapper {
+		display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+
+		-webkit-justify-content: center;
+	    justify-content: center;
+	    -webkit-align-items: center;
+	    align-items: center;
+	    -ms-flex-pack: center;
+	}
+	.navigation-wrapper .nav-link { 
+		display: block; 
+		text-align: center;
+		border-right: none;
+	}
+	.navigation-wrapper .nav-link:last-child { padding-right: 15px; }
+
+	/*----------  CONTACT-BOX-1  ----------*/
+	.contact-box-1 { margin-bottom: 2px; }
+
+	/*----------  HOME-WRAPPER  ----------*/
+	.home-wrapper-1 .text-animation,
+	.home-wrapper-2 .text-animation,
+	.home-wrapper-3 .text-animation,
+	.home-wrapper-4 .text-animation,
+	.home-wrapper-5 .text-animation { margin-bottom: 40px; }
+	.home-wrapper-4 .container,
+	.home-wrapper-5 .container { width: 100%; }
+	.home-wrapper-1 .social-icons,
+	.home-wrapper-2 .social-icons,
+	.home-wrapper-3 .social-icons,
+	.home-wrapper-4 .social-icons,
+	.home-wrapper-5 .social-icons {
+		position: inherit;
+		display: flex;
+		-webkit-justify-content: center;
+	    justify-content: center;
+	    -webkit-align-items: center;
+	    align-items: center;
+	    -ms-flex-pack: center;
+	    margin-top: 30px;
+	}
+
+	/*----------  ABOUT-WRAPPER-1  ----------*/
+	.about-wrapper-1 .left-part { text-align: center; }
+	.about-wrapper-1 .right-part { border-left: none; }
+
+	/*----------  CONTACT-WRAPPER-1  ----------*/
+	.contact-form-1 .form-control { float: inherit; }
+}
+
+/**
+******************************************************************
+*	TABLET
+******************************************************************
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/*----------  GLOBAL  ----------*/
+	.container { width: 700px; }
+
+	/*----------  TITLE  ----------*/
+	.title .sub { font-size: 18px; }
+
+	/*----------  HOME-WRAPPER  ----------*/
+	.home-wrapper-1 .text-animation .main-text,
+	.home-wrapper-2 .text-animation .main-text,
+	.home-wrapper-3 .text-animation .main-text,
+	.home-wrapper-4 .text-animation .main-text,
+	.home-wrapper-5 .text-animation .main-text { font-size: 54px; }
+	.home-wrapper-1 .subscribe-form,
+	.home-wrapper-2 .subscribe-form,
+	.home-wrapper-3 .subscribe-form { width: 90%; }
+	.home-wrapper-4 .subscribe-form,
+	.home-wrapper-5 .subscribe-form { width: 80%; }
+
+	/*----------  ABOUT-WRAPPER-1  ----------*/
+	.about-wrapper-1 .left-part { font-size: 20px; }
+
+}
+
+/**
+******************************************************************
+*	MOBILE
+******************************************************************
+*/
+@media (min-width: 200px) and (max-width: 767px) {	
+
+
+}
+@media (min-width: 600px) and (max-width: 767px) {
+
+	/*----------  GLOBAL  ----------*/
+	.container { width: 550px; }
+
+	/*----------  TITLE  ----------*/
+	.title .sub { font-size: 18px; }
+
+	/*----------  HOME-WRAPPER  ----------*/
+	.home-wrapper-1 .text-animation .main-text,
+	.home-wrapper-2 .text-animation .main-text,
+	.home-wrapper-3 .text-animation .main-text,
+	.home-wrapper-4 .text-animation .main-text,
+	.home-wrapper-5 .text-animation .main-text { font-size: 50px; }
+	.home-wrapper-1 .subscribe-form,
+	.home-wrapper-2 .subscribe-form,
+	.home-wrapper-3 .subscribe-form { width: 90%; }
+	.home-wrapper-4 .subscribe-form,
+	.home-wrapper-5 .subscribe-form { width: 80%; }
+	.home-wrapper-1 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-2 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-3 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-4 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-5 .clock.clock-1 .countdown-widget .inner-dash { font-size: 50px; }
+
+	/*----------  ABOUT-WRAPPER-1  ----------*/
+	.about-wrapper-1 .left-part { font-size: 22px; }
+
+	/*----------  SUBSCRIBE-FORM-1  ----------*/
+	.subscribe-form-1 { width: 100%; }
+
+	/*----------  WHEN-WRAPPER-1  ----------*/
+	.when-wrapper-1 .clock.clock-1 .countdown-widget .inner-dash { font-size: 50px; }
+
+}
+@media (min-width: 480px) and (max-width: 599px) {
+
+	/*----------  GLOBAL  ----------*/
+	.container { width: 400px; }
+	#page-wrapper .home-wrapper { padding-top: 150px; height: auto; }
+
+	/*----------  TITLE  ----------*/
+	.title-wrp { margin-bottom: 33px; }
+	.title .sub { font-size: 18px; }
+
+	/*----------  HOME-WRAPPER  ----------*/
+	.home-wrapper-1 .text-animation .main-text,
+	.home-wrapper-2 .text-animation .main-text,
+	.home-wrapper-3 .text-animation .main-text,
+	.home-wrapper-4 .text-animation .main-text,
+	.home-wrapper-5 .text-animation .main-text { font-size: 45px; }
+	.home-wrapper-1 .subscribe-form,
+	.home-wrapper-2 .subscribe-form,
+	.home-wrapper-3 .subscribe-form { width: 95%; }
+	.home-wrapper-4 .subscribe-form,
+	.home-wrapper-5 .subscribe-form { width: 90%; }
+	.home-wrapper-1 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-2 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-3 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-4 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-5 .clock.clock-1 .countdown-widget .inner-dash { font-size: 36px; }
+
+	/*----------  ABOUT-WRAPPER-1  ----------*/
+	.about-wrapper-1 .left-part { font-size: 22px; }
+
+	/*----------  SUBSCRIBE-FORM-1  ----------*/
+	.subscribe-form-1 { width: 100%; }
+
+	/*----------  WHEN-WRAPPER-1  ----------*/
+	.when-wrapper-1 .clock.clock-1 .countdown-widget .inner-dash { font-size: 50px; }
+	.clock.clock-1 .countdown-widget .dash { padding: 10px 15px; }
+	.when-wrapper-1 .clock.clock-1 .countdown-widget .inner-dash { font-size: 36px; }
+	.clock.clock-1 .countdown-widget .inner-dash > .digit { min-width: 22px; }
+
+}
+@media (min-width: 200px) and (max-width: 479px) {
+	
+	/*----------  GLOBAL  ----------*/
+	.container { width: 90%; }
+	#page-wrapper .home-wrapper { padding-top: 100px; height: auto; }
+
+	/*----------  TITLE  ----------*/
+	.title-wrp { margin-bottom: 33px; }
+	.title .sub { font-size: 18px; }
+
+	/*----------  TEAM-BOX-1  ----------*/
+	.team-box-1 .image { float: inherit; margin-bottom: 20px; }
+	.team-box-1 .detail { margin-left: 0; }
+
+	/*----------  HOME-WRAPPER  ----------*/
+	.home-wrapper-4 .logo,
+	.home-wrapper-5 .logo { width: 80px; }
+
+	.home-wrapper-1 .logo,
+	.home-wrapper-2 .logo,
+	.home-wrapper-3 .logo,
+	.home-wrapper-1 .text-animation,
+	.home-wrapper-2 .text-animation,
+	.home-wrapper-3 .text-animation,
+	.home-wrapper-4 .text-animation,
+	.home-wrapper-5 .text-animation { margin-bottom: 30px; }
+
+	.home-wrapper-1 .text-animation .hd-text .main-text,
+	.home-wrapper-2 .text-animation .hd-text .main-text,
+	.home-wrapper-3 .text-animation .hd-text .main-text,
+	.home-wrapper-4 .text-animation .hd-text .main-text,
+	.home-wrapper-5 .text-animation .hd-text .main-text { font-size: 20px; }
+
+	.home-wrapper-1 .text-animation .main-text,
+	.home-wrapper-2 .text-animation .main-text,
+	.home-wrapper-3 .text-animation .main-text,
+	.home-wrapper-4 .text-animation .main-text,
+	.home-wrapper-5 .text-animation .main-text { font-size: 30px; }
+
+	.home-wrapper-1 .subscribe-form,
+	.home-wrapper-2 .subscribe-form,
+	.home-wrapper-3 .subscribe-form { width: 95%; }
+	.home-wrapper-4 .subscribe-form,
+	.home-wrapper-5 .subscribe-form { width: 90%; }
+
+	.home-wrapper-1 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-2 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-3 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-4 .clock.clock-1 .countdown-widget .inner-dash,
+	.home-wrapper-5 .clock.clock-1 .countdown-widget .inner-dash { font-size: 30px; }
+
+	/*----------  ABOUT-WRAPPER-1  ----------*/
+	.about-wrapper-1 .left-part { font-size: 20px; }
+
+	/*----------  SUBSCRIBE-FORM-1  ----------*/
+	.subscribe-form-1 { width: 100%; }
+	.subscribe-form-1 .btn { 
+		position: inherit; 
+		width: 100%; 
+		right: 0;
+	}
+
+	/*----------  WHEN-WRAPPER-1  ----------*/
+	.clock.clock-1 .countdown-widget .dash { padding: 10px 10px; }
+	.when-wrapper-1 .clock.clock-1 .countdown-widget .inner-dash { font-size: 24px; }
+	.clock.clock-1 .countdown-widget .inner-dash > .digit { min-width: 15px; }
+	.when-wrapper-1 .clock.clock-1 .countdown-widget .dash_title { font-size: 14px; }
+
+}
+
+
+
+
